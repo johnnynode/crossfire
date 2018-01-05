@@ -99,9 +99,9 @@ gulp.task('server', ['connect'], function() {
     connectFlag = 0;
     portFlag = 0;
     sh.echo('将要打开浏览器访问：http://localhost:9012');
-    process.nextTick(function() {
+    setTimeout(function() {
         runSequence(['watch', 'open-browser']);
-    }, 3500);
+    }, 1500);
 });
 
 // 开始构建
@@ -117,7 +117,7 @@ gulp.task('build-server', ['connect'], function() {
     connectFlag = 1;
     portFlag = 1;
     sh.echo('将要打开浏览器访问：http://localhost:8012');
-    process.nextTick(function() {
+    setTimeout(function() {
         runSequence(['open-browser']);
-    }, 3500);
+    }, 1500);
 });
