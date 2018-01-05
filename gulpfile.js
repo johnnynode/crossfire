@@ -41,12 +41,7 @@ gulp.task('connect', function() {
             port: portFlag ? 36000 : 36000
         },
         port: portFlag ? 8012 : 9012,
-        serverInit: function() {
-            console.log('init');
-        },
         middleware: function(connect, opt) {
-            console.log('opt');
-            console.log(opt);
             return [
                 /*
                 proxy(["/api"], {
@@ -104,7 +99,9 @@ gulp.task('server', ['connect'], function() {
     connectFlag = 0;
     portFlag = 0;
     sh.echo('将要打开浏览器访问：http://localhost:9012');
-    runSequence(['watch', 'open-browser']);
+    process.nextTick(function() {
+        runSequence(['watch', 'open-browser']);
+    }, 3500);
 });
 
 // 开始构建
@@ -120,5 +117,7 @@ gulp.task('build-server', ['connect'], function() {
     connectFlag = 1;
     portFlag = 1;
     sh.echo('将要打开浏览器访问：http://localhost:8012');
-    runSequence(['open-browser']);
+    process.nextTick(function() {
+        runSequence(['open-browser']);
+    }, 3500);
 });
