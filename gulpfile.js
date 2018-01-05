@@ -41,7 +41,12 @@ gulp.task('connect', function() {
             port: portFlag ? 36000 : 36000
         },
         port: portFlag ? 8012 : 9012,
+        serverInit: function() {
+            console.log('init');
+        },
         middleware: function(connect, opt) {
+            console.log('opt');
+            console.log(opt);
             return [
                 /*
                 proxy(["/api"], {
