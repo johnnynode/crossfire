@@ -94,14 +94,12 @@ gulp.task('open-browser', function() {
 });
 
 //运行Gulp时,搭建起跨域服务器 开发模式下
-gulp.task('server', function() {
+gulp.task('server', ['connect'], function() {
     sh.echo("服务器开启!");
     connectFlag = 0;
     portFlag = 0;
-    runSequence(['connect', 'watch'], function() {
-        sh.echo('将要打开浏览器访问：http://localhost:9012');
-        runSequence(['open-browser']);
-    });
+    sh.echo('将要打开浏览器访问：http://localhost:9012');
+    runSequence(['watch', 'open-browser']);
 });
 
 // 开始构建
@@ -112,12 +110,10 @@ gulp.task('build', ['clean'], function() {
     });
 });
 
-gulp.task('build-server', function() {
+gulp.task('build-server', ['connect'], function() {
     sh.echo("开始测试构建, 服务器开启!");
     connectFlag = 1;
     portFlag = 1;
-    runSequence(['connect'], function() {
-        sh.echo('将要打开浏览器访问：http://localhost:8012');
-        runSequence(['open-browser']);
-    });
+    sh.echo('将要打开浏览器访问：http://localhost:8012');
+    runSequence(['open-browser']);
 });
