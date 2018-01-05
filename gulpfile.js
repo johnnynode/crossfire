@@ -42,8 +42,8 @@ gulp.task('connect', function() {
         },
         port: portFlag ? 8012 : 9012,
         middleware: function(connect, opt) {
-            /*
             return [
+                /*
                 proxy(["/api"], {
                     target: 'your-url',
                     changeOrigin: true,
@@ -51,8 +51,8 @@ gulp.task('connect', function() {
                         '^/api': '/'
                     }
                 })
+                */
             ]
-            */
         }
     });
 });
