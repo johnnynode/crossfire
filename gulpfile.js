@@ -64,35 +64,6 @@ gulp.task('watch', function() {
         .pipe(connect.reload());
 });
 
-// 打开浏览器
-// 关于windows下(如在IE6下)的提示：start找不到[http://localhost:9000]文件
-// 解决方案是：打开IE6浏览器(一个空白页)之后再执行gulp任务
-gulp.task('open-browser', function() {
-    var platform = process.platform;
-    // 用于区分开发模式9005和生产模式8005的测试
-    var shellStr1 = "open -a '/Applications/Google Chrome.app' 'http://localhost:9012'";
-    var shellStr2 = "start http://localhost:9012";
-
-    var shellStr3 = "open -a '/Applications/Google Chrome.app' 'http://localhost:8012'";
-    var shellStr4 = "start http://localhost:8012";
-
-    // 打开浏览器方法：
-    var openFunc = function(str, flag) {
-        // 执行并对异常处理
-        if (sh.exec(str).code !== 0) {
-            sh.echo(flag + '下打开浏览器失败,建议您安装chrome并设为默认浏览器!');
-            sh.exit(1);
-        }
-    };
-    if (platform === 'darwin') {
-        openFunc(portFlag ? shellStr3 : shellStr1, 'Mac');
-    } else if (platform === 'win32' || platform === 'win64') {
-        openFunc(portFlag ? shellStr4 : shellStr2, 'Windows');
-    } else {
-        sh.echo('现在只支持Mac和windows系统!如果未打开页面，请确认安装chrome并设为默认浏览器!');
-    }
-});
-
 //运行Gulp时,搭建起跨域服务器 开发模式下
 gulp.task('server', ['connect'], function() {
     sh.echo("服务器开启!");
