@@ -30,11 +30,12 @@ var browser = platform === 'linux' ? 'google-chrome' : (
 // 使用connect启动一个Web服务器
 gulp.task('connect', function() {
     var root = connectFlag ? allPath.dist : allPath.src;
+        hostname =  '127.0.0.1';
     connect.server({
         root: root,
-        host: '127.0.0.1',
+        host: hostname,
         livereload: {
-            hostname: '127.0.0.1',
+            hostname: hostname,
             enable: true,
             port: portFlag ? 36000 : 35729
         },
@@ -66,7 +67,7 @@ gulp.task('watch', function() {
 gulp.task('open', function() {
     // gulp-open 的选项
     var browserOptions = {
-        uri: 'http://localhost:' + (portFlag ? '8012' : '9012'),
+        uri: 'http://127.0.0.1:' + (portFlag ? '8012' : '9012'),
         app: browser
     };
     gulp.src(allPath.src)
