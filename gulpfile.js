@@ -15,8 +15,8 @@ var del = require('del'); // 清空文件和文件夹
 var open = require('gulp-open');
 
 var allPath = {
-    src: ['./src'],
-    dist: ['./dist']
+    src: './src',
+    dist: './dist'
 };
 
 var connectFlag = 0; // 用于控制connect任务中的root路径
@@ -42,11 +42,14 @@ gulp.task('clean', function() {
 
 // 使用connect启动一个Web服务器
 gulp.task('connect', function() {
+    var root = connectFlag ? allPath.dist : allPath.src;
     connect.server({
-        root: connectFlag ? './dist' : './src',
+        root: root,
+        host: '127.0.0.1',
         livereload: {
+            hostname: '127.0.0.1',
             enable: true,
-            port: portFlag ? 36000 : 36000
+            port: portFlag ? 36000 : 35729
         },
         port: portFlag ? 8012 : 9012,
         middleware: function(connect, opt) {
