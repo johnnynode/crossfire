@@ -4,5 +4,5 @@
 
 --- 
 
-### 各大版本
+### 版本
 - (jQuery 版本)[https://github.com/johnnynode/crossfire/tree/jquery]
