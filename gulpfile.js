@@ -6,12 +6,6 @@ var plumber = require('gulp-plumber');
 var process = require('process');
 var runSequence = require('run-sequence');
 var watch = require('gulp-watch');
-var imagemin = require('gulp-imagemin'); // 压缩image
-var cleanCSS = require('gulp-clean-css'); // 压缩css
-var htmlmin = require('gulp-htmlmin'); // 压缩html
-var uglify = require('gulp-uglify'); // 压缩js
-var gutil = require('gulp-util');
-var del = require('del'); // 清空文件和文件夹
 var open = require('gulp-open');
 
 var allPath = {
@@ -32,13 +26,6 @@ var platform = process.platform;
 var browser = platform === 'linux' ? 'google-chrome' : (
     platform === 'darwin' ? 'google chrome' : (
         platform === 'win32' ? 'chrome' : 'firefox'));
-
-// clean task
-gulp.task('clean', function() {
-    return del([
-        allPath.dist + '/**/*'
-    ]);
-});
 
 // 使用connect启动一个Web服务器
 gulp.task('connect', function() {
@@ -91,18 +78,4 @@ gulp.task('server', ['connect'], function() {
     connectFlag = 0;
     portFlag = 0;
     runSequence(['watch', 'open']);
-});
-
-// 开始构建 todo
-gulp.task('build', ['clean'], function() {
-    gutil.log(gutil.colors.yellow('构建开始!'));
-    runSequence(productionTask, function() {
-        gutil.log(gutil.colors.yellow('构建完成!'));
-    });
-});
-
-gulp.task('build-server', ['connect'], function() {
-    connectFlag = 1;
-    portFlag = 1;
-    runSequence(['open']);
 });
