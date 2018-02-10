@@ -16,12 +16,9 @@ var gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     htmlreplace = require('gulp-html-replace'),
-    inject = require('gulp-inject'),
     del = require('del'), // 清空文件和文件夹
     open = require('gulp-open'),
-    order = require("gulp-order"), // 判断引入优先级
-    stripDebug = require('gulp-strip-debug'), // Strip console, alert, and debugger statements
-    _if = require('gulp-if'); // 引用判断
+    stripDebug = require('gulp-strip-debug'); // Strip console, alert, and debugger statements
 
 var platform = process.platform, // 判断操作系统
     // 定义一组browser的判断
@@ -80,6 +77,7 @@ gulp.task('connect', function() {
     });
 });
 
+// 监控任务
 gulp.task('watch', function() {
     gulp.src(allPath.src)
         .pipe(plumber())
@@ -160,9 +158,16 @@ gulp.task('clean', function() {
     ]);
 });
 
-// 复制任务
+// 复制任务 用于构建时
 gulp.task('copy-list', function() {
     return gulp.src(allPath.copyList, {base:'./src'})
+        .pipe(plumber())
+        .pipe(gulp.dest(allPath.dist + '/'));
+});
+
+// 复制任务 用于开发调试时
+gulp.task('copy-all', ['clean'], function() {
+    return gulp.src(allPath.src + '/**', {base:'./src'})
         .pipe(plumber())
         .pipe(gulp.dest(allPath.dist + '/'));
 });
