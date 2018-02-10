@@ -13,13 +13,10 @@ var gulp = require('gulp'),
     htmlmin = require('gulp-htmlmin'), // 压缩html
     uglify = require('gulp-uglify'), // 压缩js
     gutil = require('gulp-util'),
-    bowerFiles = require('main-bower-files'), // bower相关文件处理
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     htmlreplace = require('gulp-html-replace'),
     inject = require('gulp-inject'),
-    templateCache = require('gulp-angular-templatecache'),
-    ngAnnotate = require('gulp-ng-annotate'),
     del = require('del'), // 清空文件和文件夹
     open = require('gulp-open'),
     order = require("gulp-order"), // 判断引入优先级
@@ -132,7 +129,6 @@ gulp.task('app-css', function() {
 gulp.task('lib-js', function() {
     return gulp.src(allPath.libJs)
         .pipe(plumber())
-        .pipe(ngAnnotate())
         .pipe(stripDebug())
         .pipe(uglify())
         .pipe(concat(allPath.replacePath.libJs))
@@ -143,7 +139,6 @@ gulp.task('lib-js', function() {
 gulp.task('app-js', function() {
     return gulp.src(allPath.appJs)
         .pipe(plumber())
-        .pipe(ngAnnotate())
         .pipe(stripDebug())
         .pipe(uglify())
         .pipe(concat(allPath.replacePath.appJs))
