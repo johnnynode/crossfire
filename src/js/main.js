@@ -5,91 +5,38 @@ $(function() {
     Page.prototype = {
         init: function() {
             this.bindEvents();
+            this.initComponents();
         },
+        /* 绑定事件 */
         bindEvents: function() {
-            /*       轩辕传奇 鼠标hover           */
-            $('.extend').hover(function() {
+            /* 轩辕传奇 鼠标hover */
+            $('.header_bar_up .extend').hover(function() {
                 $(this).children('a').addClass('cur');
-                $('.header_bar_down').addClass('cur');
+                $('.header_bar_up .header_bar_down').addClass('cur');
             }, function() {
                 $(this).children('a').removeClass('cur');
-                $('.header_bar_down').removeClass('cur');
-            })
+                $('.header_bar_up .header_bar_down').removeClass('cur');
+            });
 
-            /*       腾讯游戏 hover            */
-            $('.tencent_game').hover(function() {
+            /* 右上角 腾讯游戏 hover */
+            $('.header_bar_up .tencent_game').hover(function() {
                 $(this).children('.tencent_game_down').addClass('cur');
             }, function() {
                 $(this).children('.tencent_game_down').removeClass('cur');
             })
 
-            /*        导航部分hover            */
-            $('.nav_holder').hover(function() {
+            /* 主导航部分 hover */
+            $('#header_wrap .nav_holder').hover(function() {
                 $(this).children('ul').addClass('cur');
             }, function() {
                 $(this).children('ul').removeClass('cur');
             });
-            $('.nav_holder>ul>li').hover(function() {
+            $('#header_wrap .nav_holder > li').hover(function() {
                 $(this).addClass('cur');
             }, function() {
                 $(this).removeClass('cur');
             });
 
-            /*         合作媒体  小轮播图           */
-            var speed1 = 3000;
-            var $i = 0;
-            var speed1_1 = 200;
-            var timer1 = setInterval(fun1, speed1);
-
-            function fun1() {
-                var $p_b = $('.co_in_med_ply_box ul li').length;
-                var $h_li = $('.co_in_med_ply_box ul li').outerHeight(true);
-                $i++;
-                //console.log($i);
-                if ($i > $p_b - 1) {
-                    $i = 1;
-                    $('.co_in_med_ply_box ul').css('top', 0);
-                }
-                $('.co_in_med_ply_box ul').stop().animate({ 'top': (-$i * $h_li) + "px" }, speed1_1);
-            }
-            /* 			鼠标hover  停止计时器			 */
-            $('.co_in_med_ply_box ul li').hover(function() {
-                    clearInterval(timer1);
-                }, function() {
-                    clearInterval(timer1);
-                    timer1 = setInterval(fun1, speed1);
-                })
-                /*       合作媒体 hover            */
-            $('.co_med_kuang').hover(function() {
-                $(this).children('.co_med_box').stop(true, true).slideDown('fast');
-            }, function() {
-                $(this).children('.co_med_box').stop(true, true).fadeOut('fast');
-            });
-
-            /*          评论的滚动字幕           */
-            var speed2 = 3000;
-            var $dis_count = 0;
-            var speed2_2 = 300;
-            var timer2 = setInterval(fun2, speed2);
-
-            function fun2() {
-                var $dis_li_l = $('.discuss_list li').length;
-                var $dis_li_h = $('.discuss_list li').outerHeight(true);
-                $dis_count++;
-                if ($dis_count > ($dis_li_l - 1)) {
-                    $dis_count = 1;
-                    $('.discuss_list').css('top', 0);
-                }
-                //console.log($dis_count);
-                $('.discuss_list').stop().animate({ 'top': -($dis_count * $dis_li_h) + 'px' }, speed2_2);
-            }
-            /*      给滚动屏幕添加一个hover 停止     */
-            $('.discuss').hover(function() {
-                clearInterval(timer2);
-            }, function() {
-                clearInterval(timer2);
-                timer2 = setInterval(fun2, speed2);
-            });
 
             /*      main  content   section           */
 
@@ -171,6 +118,75 @@ $(function() {
                 $(this).addClass('cur').siblings().removeClass('cur');
                 $('.con_part04_3>li').eq($(this).index()).addClass('cur').siblings().removeClass('cur');
             });
+        },
+        /* 小组件 */
+        initComponents: function () {
+            /* 合作媒体  小轮播图 */
+            var coMedia = function () {
+                var speed1 = 3000;
+                var $i = 0;
+                var speed1_1 = 200;
+                var timer1 = setInterval(mediaPlay, speed1);
+
+                function mediaPlay() {
+                    var $p_b = $('.co_in_med_ply_box ul li').length;
+                    var $h_li = $('.co_in_med_ply_box ul li').outerHeight(true);
+                    $i++;
+                    if ($i > $p_b - 1) {
+                        $i = 1;
+                        $('.co_in_med_ply_box ul').css('top', 0);
+                    }
+                    $('.co_in_med_ply_box ul').stop().animate({ 'top': (-$i * $h_li) + "px" }, speed1_1);
+                }
+
+                /* 	鼠标hover  停止计时器	*/
+                $('.co_in_med_ply_box ul li').hover(function() {
+                    clearInterval(timer1);
+                }, function() {
+                    clearInterval(timer1);
+                    timer1 = setInterval(mediaPlay, speed1);
+                });
+
+                /* 合作媒体 hover */
+                $('.co_med_kuang').hover(function() {
+                    $(this).children('.co_med_box').stop(true, true).slideDown('fast');
+                }, function() {
+                    $(this).children('.co_med_box').stop(true, true).fadeOut('fast');
+                });
+            };
+
+            /* 评论的滚动字幕 */
+            var rollingCaptions = function () {
+                var speed2 = 3000;
+                var $dis_count = 0;
+                var speed2_2 = 300;
+                var timer2 = setInterval(capPlay, speed2);
+
+                function capPlay() {
+                    var $dis_li_l = $('.data_base .discuss_list li').length;
+                    var $dis_li_h = $('.data_base .discuss_list li').outerHeight(true);
+                    $dis_count++;
+                    if ($dis_count > ($dis_li_l - 1)) {
+                        $dis_count = 1;
+                        $('.data_base .discuss_list').css('top', 0);
+                    }
+                    //console.log($dis_count);
+                    $('.data_base .discuss_list').stop().animate({ 'top': -($dis_count * $dis_li_h) + 'px' }, speed2_2);
+                }
+
+                /* 给滚动屏幕添加一个hover 停止 */
+                $('.data_base .discuss').hover(function() {
+                    clearInterval(timer2);
+                }, function() {
+                    clearInterval(timer2);
+                    timer2 = setInterval(capPlay, speed2);
+                });
+            };
+
+            return (function (co, ro) {
+                co();
+                ro();
+            })(coMedia, rollingCaptions);
         }
     };
     // 实例化

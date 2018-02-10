@@ -149,8 +149,7 @@ body {
 
 .tencent_game {
     width: 96px;
-    height: 41px;
-    /*这个父盒子的高度设高点，就不会出现hover 问题了*/
+    height: 32px;
     background: url(../images/header_part.png) -143px -129px no-repeat;
     float: left;
     margin-top: 9px;
@@ -159,14 +158,14 @@ body {
 
 .tencent_game>a {
     color: #333;
-    padding: 3px 0 0 13px;
+    padding: 1px 0 0 13px;
     font-family: 'SimSun';
     display: block;
 }
 
 .header_bar_down {
     position: absolute;
-    top: 40;
+    top: 0;
     left: -224px;
     z-index: 1;
     width: 970px;
@@ -567,8 +566,10 @@ a.orange6 {
     width: 17px;
     height: 16px;
     background: url(../images/main_sprite.png) 0 -97px;
-    margin: 3px 0 0 85px;
     vertical-align: top;
+    position: absolute;
+    top: 3px;
+    right: 3px;
 }
 
 .co_med_box {
