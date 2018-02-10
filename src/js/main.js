@@ -4,6 +4,7 @@ $(function() {
     // 原型
     Page.prototype = {
         init: function() {
+            swfobject && swfobject.registerObject("FlashID"); // 处理flash
             this.bindEvents();
             this.initComponents();
         },

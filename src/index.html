@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>穿越火线-官网</title>
-    <link rel="shortcut icon" href='./favicon.ico' type=image/x-icon>
+    <link rel="shortcut icon" href='/favicon.ico' type=image/x-icon>
+    <!-- build:appCss -->
     <link type='text/css' rel='stylesheet' href='css/reset.css' />
     <link type='text/css' rel='stylesheet' href='css/cf.css' />
+    <!-- endbuild -->
 </head>
 
 <body>
@@ -1304,11 +1306,13 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript" src="js/swfobject_modified.js"></script>   
-    <script>
-        swfobject.registerObject("FlashID"); // 处理flash
-    </script>
-    <script type="text/javascript" src='js/jquery.js'></script>
-    <script type="text/javascript" src='js/main.js'></script>
+    <!-- build:libJs -->
+    <script type="text/javascript" src="./lib/swfobject_modified.js"></script>   
+    <script type="text/javascript" src='./lib/jquery.js'></script>
+    <!-- endbuild -->
+
+    <!-- build:appJs -->
+    <script type="text/javascript" src='./js/main.js'></script>
+    <!-- endbuild -->
 </body>
 </html>
