@@ -10,10 +10,14 @@
 
 - $ `yarn install` or $ `npm i`
 
-### 预览（preview)
+### 预览（preview) 开发模式
 
 - $ `gulp server`
 
-### 备注 (notes)
+### 构建(build)
 
-- 单页展示，未进行压缩混淆处理
+- $ `gulp build`
+
+### 构建后的生产模式(build)
+
+- $ `gulp build-server`
