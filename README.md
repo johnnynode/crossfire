@@ -5,13 +5,10 @@
 --- 
 
 ### 技术栈版本
+
 - (jQuery 版本)[https://github.com/johnnynode/crossfire/tree/jquery]
 
 ---
-
-### 兼容范围
-
-- IE8 +
 
 ### 交互效果图
 
