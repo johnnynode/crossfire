@@ -1,12 +1,12 @@
 # 穿越火线(crossfire)
 
-- 多年以前曾经玩过很长时间的穿越火线的网页特效模仿与代码展示
+- 穿越火线旧版的首页特效交互模仿展示
 
 --- 
 
 ### 技术栈版本
 
-- (jQuery 版本)[https://github.com/johnnynode/crossfire/tree/jquery]
+- [jQuery 版本](https://github.com/johnnynode/crossfire/tree/jquery)
 
 ---
 
