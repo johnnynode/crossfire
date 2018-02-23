@@ -4,12 +4,11 @@
 
 --- 
 
-### 版本
-- (jQuery 版本)[https://github.com/johnnynode/crossfire/tree/jquery]
-
-
 ### 交互效果图
 
 <div align=center>
   <img src="./pic/cf.jpg"/>
 </div>
+
+### 版本
+- (jQuery 版本)[https://github.com/johnnynode/crossfire/tree/jquery]
