@@ -1,0 +1,482 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'i' ]
+2 info using npm@3.3.6
+3 info using node@v5.0.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData autoprefixer
+20 silly mapToRegistry name autoprefixer
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npm.taobao.org/
+23 silly mapToRegistry uri https://registry.npm.taobao.org/autoprefixer
+24 silly fetchNamedPackageData gulp
+25 silly mapToRegistry name gulp
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npm.taobao.org/
+28 silly mapToRegistry uri https://registry.npm.taobao.org/gulp
+29 silly fetchNamedPackageData gulp-clean-css
+30 silly mapToRegistry name gulp-clean-css
+31 silly mapToRegistry using default registry
+32 silly mapToRegistry registry https://registry.npm.taobao.org/
+33 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-clean-css
+34 silly fetchNamedPackageData gulp-concat
+35 silly mapToRegistry name gulp-concat
+36 silly mapToRegistry using default registry
+37 silly mapToRegistry registry https://registry.npm.taobao.org/
+38 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-concat
+39 silly fetchNamedPackageData gulp-connect
+40 silly mapToRegistry name gulp-connect
+41 silly mapToRegistry using default registry
+42 silly mapToRegistry registry https://registry.npm.taobao.org/
+43 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-connect
+44 silly fetchNamedPackageData gulp-html-replace
+45 silly mapToRegistry name gulp-html-replace
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npm.taobao.org/
+48 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-html-replace
+49 silly fetchNamedPackageData gulp-htmlmin
+50 silly mapToRegistry name gulp-htmlmin
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npm.taobao.org/
+53 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-htmlmin
+54 silly fetchNamedPackageData gulp-imagemin
+55 silly mapToRegistry name gulp-imagemin
+56 silly mapToRegistry using default registry
+57 silly mapToRegistry registry https://registry.npm.taobao.org/
+58 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-imagemin
+59 silly fetchNamedPackageData gulp-open
+60 silly mapToRegistry name gulp-open
+61 silly mapToRegistry using default registry
+62 silly mapToRegistry registry https://registry.npm.taobao.org/
+63 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-open
+64 silly fetchNamedPackageData gulp-plumber
+65 silly mapToRegistry name gulp-plumber
+66 silly mapToRegistry using default registry
+67 silly mapToRegistry registry https://registry.npm.taobao.org/
+68 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-plumber
+69 silly fetchNamedPackageData gulp-postcss
+70 silly mapToRegistry name gulp-postcss
+71 silly mapToRegistry using default registry
+72 silly mapToRegistry registry https://registry.npm.taobao.org/
+73 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-postcss
+74 silly fetchNamedPackageData gulp-sass
+75 silly mapToRegistry name gulp-sass
+76 silly mapToRegistry using default registry
+77 silly mapToRegistry registry https://registry.npm.taobao.org/
+78 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-sass
+79 silly fetchNamedPackageData gulp-strip-debug
+80 silly mapToRegistry name gulp-strip-debug
+81 silly mapToRegistry using default registry
+82 silly mapToRegistry registry https://registry.npm.taobao.org/
+83 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-strip-debug
+84 silly fetchNamedPackageData gulp-uglify
+85 silly mapToRegistry name gulp-uglify
+86 silly mapToRegistry using default registry
+87 silly mapToRegistry registry https://registry.npm.taobao.org/
+88 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-uglify
+89 silly fetchNamedPackageData gulp-util
+90 silly mapToRegistry name gulp-util
+91 silly mapToRegistry using default registry
+92 silly mapToRegistry registry https://registry.npm.taobao.org/
+93 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-util
+94 silly fetchNamedPackageData gulp-watch
+95 silly mapToRegistry name gulp-watch
+96 silly mapToRegistry using default registry
+97 silly mapToRegistry registry https://registry.npm.taobao.org/
+98 silly mapToRegistry uri https://registry.npm.taobao.org/gulp-watch
+99 verbose request uri https://registry.npm.taobao.org/autoprefixer
+100 verbose request no auth needed
+101 info attempt registry request try #1 at 7:22:01 PM
+102 verbose request id 0f551b5c0acaeed3
+103 http request GET https://registry.npm.taobao.org/autoprefixer
+104 verbose request uri https://registry.npm.taobao.org/gulp
+105 verbose request no auth needed
+106 info attempt registry request try #1 at 7:22:01 PM
+107 http request GET https://registry.npm.taobao.org/gulp
+108 verbose request uri https://registry.npm.taobao.org/gulp-clean-css
+109 verbose request no auth needed
+110 info attempt registry request try #1 at 7:22:01 PM
+111 http request GET https://registry.npm.taobao.org/gulp-clean-css
+112 verbose request uri https://registry.npm.taobao.org/gulp-concat
+113 verbose request no auth needed
+114 info attempt registry request try #1 at 7:22:01 PM
+115 http request GET https://registry.npm.taobao.org/gulp-concat
+116 verbose request uri https://registry.npm.taobao.org/gulp-connect
+117 verbose request no auth needed
+118 info attempt registry request try #1 at 7:22:01 PM
+119 http request GET https://registry.npm.taobao.org/gulp-connect
+120 verbose request uri https://registry.npm.taobao.org/gulp-html-replace
+121 verbose request no auth needed
+122 info attempt registry request try #1 at 7:22:01 PM
+123 http request GET https://registry.npm.taobao.org/gulp-html-replace
+124 verbose request uri https://registry.npm.taobao.org/gulp-htmlmin
+125 verbose request no auth needed
+126 info attempt registry request try #1 at 7:22:01 PM
+127 http request GET https://registry.npm.taobao.org/gulp-htmlmin
+128 verbose request uri https://registry.npm.taobao.org/gulp-imagemin
+129 verbose request no auth needed
+130 info attempt registry request try #1 at 7:22:01 PM
+131 http request GET https://registry.npm.taobao.org/gulp-imagemin
+132 verbose request uri https://registry.npm.taobao.org/gulp-open
+133 verbose request no auth needed
+134 info attempt registry request try #1 at 7:22:01 PM
+135 http request GET https://registry.npm.taobao.org/gulp-open
+136 verbose request uri https://registry.npm.taobao.org/gulp-plumber
+137 verbose request no auth needed
+138 info attempt registry request try #1 at 7:22:01 PM
+139 http request GET https://registry.npm.taobao.org/gulp-plumber
+140 verbose request uri https://registry.npm.taobao.org/gulp-postcss
+141 verbose request no auth needed
+142 info attempt registry request try #1 at 7:22:01 PM
+143 http request GET https://registry.npm.taobao.org/gulp-postcss
+144 verbose request uri https://registry.npm.taobao.org/gulp-sass
+145 verbose request no auth needed
+146 info attempt registry request try #1 at 7:22:01 PM
+147 http request GET https://registry.npm.taobao.org/gulp-sass
+148 verbose request uri https://registry.npm.taobao.org/gulp-strip-debug
+149 verbose request no auth needed
+150 info attempt registry request try #1 at 7:22:01 PM
+151 http request GET https://registry.npm.taobao.org/gulp-strip-debug
+152 verbose request uri https://registry.npm.taobao.org/gulp-uglify
+153 verbose request no auth needed
+154 info attempt registry request try #1 at 7:22:01 PM
+155 http request GET https://registry.npm.taobao.org/gulp-uglify
+156 verbose request uri https://registry.npm.taobao.org/gulp-util
+157 verbose request no auth needed
+158 info attempt registry request try #1 at 7:22:01 PM
+159 http request GET https://registry.npm.taobao.org/gulp-util
+160 verbose request uri https://registry.npm.taobao.org/gulp-watch
+161 verbose request no auth needed
+162 info attempt registry request try #1 at 7:22:01 PM
+163 http request GET https://registry.npm.taobao.org/gulp-watch
+164 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+165 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+166 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+167 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+168 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+169 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+170 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+171 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+172 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+173 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+174 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+175 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+176 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+177 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+178 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+179 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+180 info attempt registry request try #2 at 7:23:35 PM
+181 http request GET https://registry.npm.taobao.org/autoprefixer
+182 info attempt registry request try #2 at 7:23:35 PM
+183 http request GET https://registry.npm.taobao.org/gulp
+184 info attempt registry request try #2 at 7:23:35 PM
+185 http request GET https://registry.npm.taobao.org/gulp-plumber
+186 info attempt registry request try #2 at 7:23:35 PM
+187 http request GET https://registry.npm.taobao.org/gulp-open
+188 info attempt registry request try #2 at 7:23:35 PM
+189 http request GET https://registry.npm.taobao.org/gulp-imagemin
+190 info attempt registry request try #2 at 7:23:35 PM
+191 http request GET https://registry.npm.taobao.org/gulp-htmlmin
+192 info attempt registry request try #2 at 7:23:35 PM
+193 http request GET https://registry.npm.taobao.org/gulp-html-replace
+194 info attempt registry request try #2 at 7:23:35 PM
+195 http request GET https://registry.npm.taobao.org/gulp-connect
+196 info attempt registry request try #2 at 7:23:35 PM
+197 http request GET https://registry.npm.taobao.org/gulp-concat
+198 info attempt registry request try #2 at 7:23:35 PM
+199 http request GET https://registry.npm.taobao.org/gulp-clean-css
+200 info attempt registry request try #2 at 7:23:35 PM
+201 http request GET https://registry.npm.taobao.org/gulp-watch
+202 info attempt registry request try #2 at 7:23:35 PM
+203 http request GET https://registry.npm.taobao.org/gulp-util
+204 info attempt registry request try #2 at 7:23:35 PM
+205 http request GET https://registry.npm.taobao.org/gulp-uglify
+206 info attempt registry request try #2 at 7:23:35 PM
+207 http request GET https://registry.npm.taobao.org/gulp-strip-debug
+208 info attempt registry request try #2 at 7:23:35 PM
+209 http request GET https://registry.npm.taobao.org/gulp-sass
+210 info attempt registry request try #2 at 7:23:35 PM
+211 http request GET https://registry.npm.taobao.org/gulp-postcss
+212 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+213 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+214 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+215 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+216 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+217 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+218 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+219 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+220 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+221 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+222 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+223 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+224 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+225 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+226 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+227 info retry will retry, error on last attempt: Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+228 info attempt registry request try #3 at 7:26:00 PM
+229 http request GET https://registry.npm.taobao.org/gulp
+230 info attempt registry request try #3 at 7:26:00 PM
+231 http request GET https://registry.npm.taobao.org/autoprefixer
+232 info attempt registry request try #3 at 7:26:00 PM
+233 http request GET https://registry.npm.taobao.org/gulp-watch
+234 info attempt registry request try #3 at 7:26:00 PM
+235 http request GET https://registry.npm.taobao.org/gulp-clean-css
+236 info attempt registry request try #3 at 7:26:00 PM
+237 http request GET https://registry.npm.taobao.org/gulp-concat
+238 info attempt registry request try #3 at 7:26:00 PM
+239 http request GET https://registry.npm.taobao.org/gulp-connect
+240 info attempt registry request try #3 at 7:26:00 PM
+241 http request GET https://registry.npm.taobao.org/gulp-html-replace
+242 info attempt registry request try #3 at 7:26:00 PM
+243 http request GET https://registry.npm.taobao.org/gulp-htmlmin
+244 info attempt registry request try #3 at 7:26:00 PM
+245 http request GET https://registry.npm.taobao.org/gulp-imagemin
+246 info attempt registry request try #3 at 7:26:00 PM
+247 http request GET https://registry.npm.taobao.org/gulp-open
+248 info attempt registry request try #3 at 7:26:00 PM
+249 http request GET https://registry.npm.taobao.org/gulp-plumber
+250 info attempt registry request try #3 at 7:26:00 PM
+251 http request GET https://registry.npm.taobao.org/gulp-sass
+252 info attempt registry request try #3 at 7:26:00 PM
+253 http request GET https://registry.npm.taobao.org/gulp-strip-debug
+254 info attempt registry request try #3 at 7:26:00 PM
+255 http request GET https://registry.npm.taobao.org/gulp-uglify
+256 info attempt registry request try #3 at 7:26:00 PM
+257 http request GET https://registry.npm.taobao.org/gulp-util
+258 info attempt registry request try #3 at 7:26:00 PM
+259 http request GET https://registry.npm.taobao.org/gulp-postcss
+260 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+260 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+260 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+260 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+260 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+260 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+260 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+260 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+260 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+260 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+260 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+260 silly fetchPackageMetaData  error for autoprefixer@^7.2.5 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+261 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+261 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+261 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+261 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+261 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+261 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+261 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+261 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+261 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+261 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+261 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+261 silly fetchPackageMetaData  error for gulp@^3.9.1 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+262 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+262 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+262 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+262 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+262 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+262 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+262 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+262 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+262 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+262 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+262 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+262 silly fetchPackageMetaData  error for gulp-open@^2.1.0 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+263 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+263 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+263 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+263 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+263 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+263 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+263 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+263 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+263 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+263 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+263 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+263 silly fetchPackageMetaData  error for gulp-imagemin@^3.3.0 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+264 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+264 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+264 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+264 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+264 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+264 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+264 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+264 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+264 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+264 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+264 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+264 silly fetchPackageMetaData  error for gulp-htmlmin@^4.0.0 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+265 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+265 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+265 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+265 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+265 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+265 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+265 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+265 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+265 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+265 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+265 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+265 silly fetchPackageMetaData  error for gulp-html-replace@^1.6.2 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+266 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+266 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+266 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+266 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+266 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+266 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+266 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+266 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+266 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+266 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+266 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+266 silly fetchPackageMetaData  error for gulp-connect@^5.2.0 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+267 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+267 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+267 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+267 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+267 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+267 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+267 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+267 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+267 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+267 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+267 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+267 silly fetchPackageMetaData  error for gulp-concat@^2.6.1 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+268 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+268 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+268 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+268 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+268 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+268 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+268 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+268 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+268 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+268 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+268 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+268 silly fetchPackageMetaData  error for gulp-clean-css@^3.9.2 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+269 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+269 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+269 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+269 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+269 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+269 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+269 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+269 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+269 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+269 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+269 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+269 silly fetchPackageMetaData  error for gulp-watch@^4.3.11 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+270 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+270 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+270 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+270 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+270 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+270 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+270 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+270 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+270 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+270 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+270 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+270 silly fetchPackageMetaData  error for gulp-plumber@^1.1.0 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+271 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+271 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+271 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+271 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+271 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+271 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+271 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+271 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+271 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+271 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+271 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+271 silly fetchPackageMetaData  error for gulp-postcss@^7.0.1 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+272 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+272 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+272 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+272 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+272 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+272 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+272 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+272 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+272 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+272 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+272 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+272 silly fetchPackageMetaData  error for gulp-util@^3.0.8 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+273 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+273 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+273 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+273 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+273 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+273 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+273 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+273 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+273 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+273 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+273 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+273 silly fetchPackageMetaData  error for gulp-uglify@^3.0.0 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+274 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+274 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+274 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+274 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+274 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+274 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+274 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+274 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+274 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+274 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+274 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+274 silly fetchPackageMetaData  error for gulp-strip-debug@^3.0.0 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+275 silly fetchPackageMetaData Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+275 silly fetchPackageMetaData     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+275 silly fetchPackageMetaData     at ClientRequest.g (events.js:260:16)
+275 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+275 silly fetchPackageMetaData     at ClientRequest.emit (events.js:169:7)
+275 silly fetchPackageMetaData     at Socket.socketErrorListener (_http_client.js:265:9)
+275 silly fetchPackageMetaData     at emitOne (events.js:77:13)
+275 silly fetchPackageMetaData     at Socket.emit (events.js:169:7)
+275 silly fetchPackageMetaData     at emitErrorNT (net.js:1253:8)
+275 silly fetchPackageMetaData     at doNTCallback2 (node.js:450:9)
+275 silly fetchPackageMetaData     at process._tickCallback (node.js:364:17)
+275 silly fetchPackageMetaData  error for gulp-sass@^3.1.0 { [Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080] code: 'ECONNRESET' }
+276 silly rollbackFailedOptional Starting
+277 silly rollbackFailedOptional Finishing
+278 silly runTopLevelLifecycles Starting
+279 silly runTopLevelLifecycles Finishing
+280 silly install printInstalled
+281 verbose stack Error: tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+281 verbose stack     at ClientRequest.onError (/usr/local/lib/node_modules/npm/node_modules/tunnel-agent/index.js:174:17)
+281 verbose stack     at ClientRequest.g (events.js:260:16)
+281 verbose stack     at emitOne (events.js:77:13)
+281 verbose stack     at ClientRequest.emit (events.js:169:7)
+281 verbose stack     at Socket.socketErrorListener (_http_client.js:265:9)
+281 verbose stack     at emitOne (events.js:77:13)
+281 verbose stack     at Socket.emit (events.js:169:7)
+281 verbose stack     at emitErrorNT (net.js:1253:8)
+281 verbose stack     at doNTCallback2 (node.js:450:9)
+281 verbose stack     at process._tickCallback (node.js:364:17)
+282 verbose cwd /Users/Johnny/code/github/webInteraction/crossfire
+283 error Darwin 17.4.0
+284 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "i"
+285 error node v5.0.0
+286 error npm  v3.3.6
+287 error code ECONNRESET
+288 error network tunneling socket could not be established, cause=connect ETIMEDOUT 10.129.49.21:8080
+288 error network This is most likely not a problem with npm itself
+288 error network and is related to network connectivity.
+288 error network In most cases you are behind a proxy or have bad network settings.
+288 error network
+288 error network If you are behind a proxy, please make sure that the
+288 error network 'proxy' config is set properly.  See: 'npm help config'
+289 verbose exit [ 1, true ]

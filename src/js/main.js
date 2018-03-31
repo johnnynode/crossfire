@@ -5,6 +5,7 @@ $(function () {
     Page.prototype = {
         init: function () {
             swfobject && swfobject.registerObject("FlashID"); // 处理flash
+            (window.navigator.userAgent.indexOf("Chrome") === -1) && $('.flash-placeholder').addClass('cur') && $('#FlashID').addClass('cur');
             this.bindEvents();
             this.initComponents();
         },

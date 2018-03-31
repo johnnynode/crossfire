@@ -1246,3 +1246,23 @@ a.orange6 {
 .footer_con p .p_s_r {
     font-size: 12px;
 }
+
+.main_side_bar .flash {
+    position: relative;
+}
+
+.flash-placeholder {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: -1px;
+    z-index: 999;
+}
+
+.flash-placeholder.cur{
+    display: block;
+}
+
+#FlashID.cur{
+    display: none;
+}
