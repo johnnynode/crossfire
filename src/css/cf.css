@@ -143,7 +143,7 @@ body {
 .header_bar_down {
     position: absolute;
     top: 0;
-    left: -224px;
+    left: -222px;
     z-index: 1;
     width: 970px;
     height: 185px;
