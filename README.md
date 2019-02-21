@@ -4,7 +4,7 @@
 
 ### 克隆(clone)
 
-- $ `git clone git@github.com:johnnynode/crossfire.git --depth 1`
+- $ `git clone -b jquery git@github.com:johnnynode/crossfire.git --depth 1`
 
 ### 安装(install)
 
